@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class neu1 {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.print("SAYI GIRINI");
+        int sayi= input.nextInt();
+        for (int i = 2; i <= sayi; i++) {
+            int n = 0;
+            for (int k = 1; k <= i; k++) {
+                if (i % k == 0) {
+
+                   n++;
+                }
+            }
+            if (n<=2){
+                System.out.println(i);
+            }
+        }
+
+
+    }
+
+
+
+       }
+
